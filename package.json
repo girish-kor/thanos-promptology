@@ -1,0 +1,35 @@
+{
+  "name": "thanos-promptology",
+  "version": "1.0.0",
+  "description": "Full stack development with Thanos prompts and promptology",
+  "private": true,
+  "scripts": {
+    "dev": "npx turbo run dev --filter=./apps/*",
+    "build": "npx turbo run build --filter=!.",
+    "test": "npx turbo run test --filter=!.",
+    "lint": "npx turbo run lint --filter=!.",
+    "type-check": "npx turbo run type-check --filter=!.",
+    "db:push": "pnpm --filter database db:push",
+    "db:studio": "pnpm --filter database db:studio",
+    "db:generate": "pnpm --filter database generate",
+    "db:migrate": "pnpm --filter database migrate",
+    "seed": "pnpm --filter database seed",
+    "clean": "npx turbo run clean --filter=!. && rm -rf node_modules",
+    "deploy": "bash scripts/deploy.sh"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "turbo": "latest",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "dependencies": {
+    "@prisma/client": "^7.6.0"
+  }
+}

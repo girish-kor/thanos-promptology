@@ -1,0 +1,20 @@
+{
+  "name": "@thanos/config",
+  "version": "1.0.0",
+  "description": "Shared configuration (ESLint, TypeScript, etc)",
+  "private": true,
+  "files": [
+    "eslint.js",
+    "tsconfig.json",
+    "tsconfig.*.json"
+  ],
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "typescript": "^5.0.0"
+  }
+}

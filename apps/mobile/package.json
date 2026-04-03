@@ -1,0 +1,32 @@
+{
+  "name": "@thanos/mobile",
+  "version": "1.0.0",
+  "description": "React Native/Expo mobile application",
+  "private": true,
+  "scripts": {
+    "dev": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build": "expo build",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "expo": "^50.0.0",
+    "react": "^18.0.0",
+    "react-native": "^0.73.0",
+    "axios": "^1.6.0",
+    "@tanstack/react-query": "^5.0.0",
+    "zustand": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "prettier": "^3.0.0"
+  }
+}
